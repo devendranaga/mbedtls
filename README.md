@@ -1,6 +1,18 @@
 README for Mbed TLS
 ===================
 
+For compiling the mbedtls with shared lib support use this cmake flag.
+
+```cmake
+DUSE_SHARED_MBEDTLS_LIBRARY
+```
+
+command is
+
+```bash
+cmake .. -DUSE_SHARED_MBEDTLS_LIBRARY=on
+```
+
 Mbed TLS is a C library that implements cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols. Its small code footprint makes it suitable for embedded systems.
 
 Mbed TLS includes a reference implementation of the [PSA Cryptography API](#psa-cryptography-api). This is currently a preview for evaluation purposes only.
